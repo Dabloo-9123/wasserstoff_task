@@ -1,0 +1,168 @@
+div a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: .6rem;
+}
+div a.active{
+    color: rgb(81, 214, 119);
+    
+}
+.nav{
+    /* display: flex; */
+    flex-direction: column;
+    border: solid px rgb(173, 124, 124);
+   width: 100%;
+    color: white;
+    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+}
+.nav_top{
+    display: flex;
+    align-items: center;
+    background-color: teal;
+    justify-content: space-between;
+    
+}
+.nav_top input{
+ width: 40vw;
+ text-align: center;
+ border-color: white;
+ border: none;
+ height: 2rem;
+ 
+}
+.nav_top input:focus{
+    outline: none;
+}
+
+.nav_bot{
+    display: flex;
+    align-items: center;
+    background-color: teal;
+    margin-top: 5px;
+    background-color: white;
+    color: teal;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    box-shadow: 0px 0px 10px;
+    
+}
+.nav_bot a{
+    color: teal;
+    font-size: 1.2rem;
+    /* background-color: lightcoral; */
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    /* width: 3vw; */
+    height: 2.5vw;
+    font-size: 1vw;
+    /* background-image: url(); */
+    font-weight: 600;
+    transition: all;
+}
+
+.nav_bot a:active{
+    color:green
+}
+.nav_bot a:hover{
+  transform: translateY(-2px);
+  background-color: grey;
+  color: white;
+  font-size: 1.5vw;
+}
+
+.search_item {
+    width: 20%;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+}
+.cart_navbar{
+    /* border: solid 1px red; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    width: 3rem;
+    margin-right: 1rem;
+}
+.search_icon{
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 1rem;
+    /* border-radius: 50%; */
+    /* background-color: red; */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStLMluoDg4nCExTarI3FkLveJAR3Wpb6qVnw&usqp=CAU');
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+
+}
+.nav_top_right{
+    display: flex;
+    /* border: solid 1px black; */
+    justify-content: space-between;
+}
+.icon{
+    /* font-size: 2.5rem; Adjust the font size as needed */
+  color: whitesmoke; /* Choose your desired text color */
+  font-weight: bold;
+  text-align: center; /* Center the text */
+  /* margin-bottom: 20px; Add spacing at the bottom */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 2px; /* Adjust letter spacing */
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px #ff7f50; */
+  text-shadow: 1px 1px 1px #333, 2px 2px 2px #444, 3px 3px 3px #555;
+}
+/* .search_icon:hover{
+    width: 2rem;
+    height: 2rem;
+} */
+/* mediaquery for mobile */
+@media only screen and (max-width: 650px) and (min-width:250px) {
+    .nav_bot {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      
+    }
+    .nav_bot a {
+       
+        padding: 0.5rem;
+        height: 5vw;
+        font-size: 3.5vw;
+    }
+    .nav_top h2 {
+        color: whitesmoke;
+        font-size: 1.2rem;
+        font-weight: 900;
+    }
+    .nav_top input {
+        width: 25vw;
+        border-radius: 2rem;
+    }
+   .icon{
+    color: whitesmoke;
+   }
+   }
+   /* mediaquery for tab */
+   @media only screen and (min-width: 651px) and (max-width: 991px) {
+    .nav_bot a:hover {
+       
+        font-size: 2vw;
+    }
+    .nav_bot a { 
+        font-size: 1.2rem;
+   }
+   .icon{
+    color: whitesmoke;
+   }
+ 
+}
